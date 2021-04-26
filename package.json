@@ -1,0 +1,24 @@
+{
+  "name": "zen.dev-mitake",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "ls _articles | egrep .md | xargs -I@ pandoc -f markdown -t markdown -s _articles/@ -o articles/@ --filter scripts/plantuml.py"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mitakeck/zenn.dev-mitake.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mitakeck/zenn.dev-mitake/issues"
+  },
+  "homepage": "https://github.com/mitakeck/zenn.dev-mitake#readme",
+  "dependencies": {
+    "zenn-cli": "^0.1.79"
+  }
+}
